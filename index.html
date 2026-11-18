@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Math Through Time؛ سفری تعاملی در دنیای توان، رادیکال و لگاریتم">
+  <title>Math Through Time | ریاضیات در گذر زمان</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Math Through Time">
+      <span class="brand-mark">∑</span>
+      <span>Math <b>Through Time</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">خانه</a>
+      <a href="#intro">آشنایی</a>
+      <a href="#exponents">توان</a>
+      <a href="#radicals">رادیکال</a>
+      <a href="#logarithms">لگاریتم</a>
+      <a href="#final-quiz">آزمون نهایی</a>
+    </nav>
+    <a class="header-cta" href="#exponents">شروع یادگیری <span>←</span></a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> یک سفر علمی از گذشته تا آینده</span>
+        <h1>ریاضیات،<br><span>فراتر از فرمول‌ها</span></h1>
+        <p class="hero-lead">سه مفهوم ساده، سه مسیر شگفت‌انگیز؛ از محاسبات تمدن‌های باستان تا الگوریتم‌ها و فناوری‌های آینده.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#intro">شروع سفر <span>←</span></a>
+          <a class="text-link" href="#topics">مشاهده مباحث <span>⌄</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✦</span><span>یاد بگیر، آزمایش کن و خودت نتیجه را کشف کن.</span></div>
+      </div>
+      <div class="hero-art" aria-label="نمادهای ریاضی">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="formula-card formula-top"><small>EXPONENT</small><strong>x<sup>n</sup></strong><span>رشد و تکرار</span></div>
+        <div class="formula-card formula-main"><span class="math-symbol">√</span><strong>∑</strong><small>MATHEMATICS</small></div>
+        <div class="formula-card formula-bottom"><small>LOGARITHM</small><strong>log<sub>b</sub>(x)</strong><span>معکوس توان</span></div>
+        <span class="floating-dot dot-a"></span><span class="floating-dot dot-b"></span><span class="floating-dot dot-c"></span>
+      </div>
+      <div class="hero-bottom"><span>01 / 03</span><span class="scroll-line"></span><span>SCROLL TO EXPLORE</span></div>
+    </section>
+
+    <section class="intro-section section" id="intro">
+      <div class="section-heading centered">
+        <span class="eyebrow">THE BIG IDEA</span>
+        <h2>چرا این سه مبحث مهم‌اند؟</h2>
+        <p>توان، رادیکال و لگاریتم فقط چند نماد در کتاب ریاضی نیستند؛ آن‌ها ابزارهایی برای توصیف رشد، اندازه‌گیری و حل مسئله‌اند.</p>
+      </div>
+      <div class="topic-cards" id="topics">
+        <a class="topic-card blue-card" href="#exponents">
+          <span class="topic-number">01</span><div class="topic-icon">x<sup>n</sup></div>
+          <h3>توان</h3><p>نمایش ضرب تکراری و بررسی رشدهای سریع.</p><span class="card-arrow">←</span>
+        </a>
+        <a class="topic-card purple-card" href="#radicals">
+          <span class="topic-number">02</span><div class="topic-icon">√x</div>
+          <h3>رادیکال</h3><p>پیدا کردن ریشه و محاسبه فاصله‌ها و اندازه‌ها.</p><span class="card-arrow">←</span>
+        </a>
+        <a class="topic-card green-card" href="#logarithms">
+          <span class="topic-number">03</span><div class="topic-icon">log</div>
+          <h3>لگاریتم</h3><p>پیدا کردن توان مجهول و ساده‌سازی مقیاس‌ها.</p><span class="card-arrow">←</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="learning-section section" id="exponents">
+      <div class="section-heading">
+        <span class="eyebrow blue-eyebrow">01 / EXPONENTS</span>
+        <h2>توان؛ قدرتِ تکرار</h2>
+        <p>توان راهی کوتاه برای نشان دادن ضرب یک عدد در خودش است.</p>
+      </div>
+      <div class="theory-grid">
+        <article class="theory-card">
+          <span class="mini-label">تعریف ریاضی</span>
+          <div class="big-equation">\\(a^n=\\underbrace{a\\times a\\times\\cdots\\times a}_{n\\ بار}\\)</div>
+          <p>در عبارت \(a^n\)، عدد <b>a</b> پایه و عدد <b>n</b> توان نام دارد. برای نمونه، \(2^3=2×2×2=8\).</p>
+          <div class="rule-list">
+            <div><b>ضرب توان‌های هم‌پایه</b><span>\\(a^m\\times a^n=a^{m+n}\\)</span></div>
+            <div><b>تقسیم توان‌های هم‌پایه</b><span>\\(\\frac{a^m}{a^n}=a^{m-n}\\)</span></div>
+            <div><b>توان صفر</b><span>\\(a^0=1\\quad(a\\ne0)\\)</span></div>
+            <div><b>توان منفی</b><span>\\(a^{-n}=\\frac{1}{a^n}\\)</span></div>
+          </div>
+        </article>
+        <aside class="fact-card blue-fact">
+          <span class="fact-icon">✦</span><h3>نکته کلیدی</h3>
+          <p>توان دوم و سوم به‌ترتیب در محاسبه مساحت مربع و حجم مکعب دیده می‌شوند.</p>
+          <div class="fact-equation">\\(A=l^2\\qquad V=l^3\\)</div>
+        </aside>
+      </div>
+      <div class="time-heading"><span>از گذشته تا آینده</span><i></i></div>
+      <div class="timeline three-columns">
+        <article><span class="time-tag">گذشته</span><h3>هندسه و اندازه‌گیری</h3><p>تمدن‌های باستانی برای محاسبه مساحت زمین‌ها، حجم مخازن و مسائل هندسی از ایده ضرب‌های تکراری و مربع و مکعب اعداد استفاده می‌کردند. نمادگذاری امروزی توان بعدها تکامل پیدا کرد.</p><div class="time-example">مثال: مساحت مربع با ضلع ۵ متر<br><b>\\(A=5^2=25\\ m^2\\)</b></div></article>
+        <article><span class="time-tag">حال</span><h3>داده و کامپیوتر</h3><p>در سیستم دودویی، هر بیت دو حالت دارد. بنابراین تعداد حالت‌های ممکن برای n بیت برابر \(2^n\) است. توان‌های ۲ همچنین در نمایش ظرفیت‌های حافظه با مبنای دودویی کاربرد دارند.</p><div class="time-example">مثال: ۸ بیت<br><b>\\(2^8=256\\)</b><br>حالت ممکن</div></article>
+        <article><span class="time-tag">آینده</span><h3>رایانش و مدل‌سازی</h3><p>در تحلیل فضای حالت سامانه‌های کوانتومی، n کیوبیت می‌تواند فضایی با بُعد \(2^n\) داشته باشد. مدل‌های رشد و شبیه‌سازی‌های علمی نیز از روابط توانی استفاده می‌کنند.</p><div class="time-example">مثال: ۱۰ کیوبیت<br><b>\\(2^{10}=1024\\)</b><br>بُعد فضای حالت</div></article>
+      </div>
+      <div class="lab-panel blue-lab">
+        <div class="lab-copy"><span class="mini-label">INTERACTIVE LAB 01</span><h3>آزمایشگاه توان</h3><p>پایه و توان را تغییر بده و ببین مقدار عبارت چطور تغییر می‌کند.</p><div class="lab-result" id="powerResult">2⁴ = 16</div><span class="result-caption">نتیجه محاسبه</span></div>
+        <div class="lab-controls">
+          <label for="powerBase">پایه <output id="powerBaseOut">2</output></label><input id="powerBase" type="range" min="1" max="10" value="2">
+          <label for="powerExp">توان <output id="powerExpOut">4</output></label><input id="powerExp" type="range" min="0" max="8" value="4">
+          <div class="chart-wrap"><canvas id="powerChart" aria-label="نمودار رشد توان"></canvas></div>
+        </div>
+      </div>
+      <div class="quiz-box" data-quiz="power">
+        <div><span class="mini-label">QUICK CHECK</span><h3>یک سؤال برای سنجش یادگیری</h3><p>تعداد حالت‌های ممکن با ۵ بیت چندتاست؟</p></div>
+        <div class="quiz-options"><button data-correct="false">۱۰</button><button data-correct="true">۳۲</button><button data-correct="false">۲۵</button></div>
+        <p class="quiz-feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="learning-section section alternate" id="radicals">
+      <div class="section-heading">
+        <span class="eyebrow purple-eyebrow">02 / RADICALS</span>
+        <h2>رادیکال؛ بازگشت از توان</h2>
+        <p>ریشه‌گیری، راهی برای پیدا کردن عددی است که اگر به توان مشخصی برسد، عدد موردنظر را می‌سازد.</p>
+      </div>
+      <div class="theory-grid">
+        <article class="theory-card">
+          <span class="mini-label">تعریف ریاضی</span>
+          <div class="big-equation">\\(\\sqrt[n]{a}=b\\iff b^n=a\\)</div>
+          <p>در ریشه دوم، به دنبال عددی هستیم که مربع آن برابر عدد زیر رادیکال باشد. مثلاً \(\sqrt{25}=5\)، چون \(5^2=25\).</p>
+          <div class="rule-list">
+            <div><b>ضرب رادیکال‌ها</b><span>\\(\\sqrt a\\times\\sqrt b=\\sqrt{ab}\\)</span></div>
+            <div><b>تقسیم رادیکال‌ها</b><span>\\(\\frac{\\sqrt a}{\\sqrt b}=\\sqrt{\\frac ab}\\)</span></div>
+            <div><b>ریشه توان دوم</b><span>\\(\\sqrt{a^2}=|a|\\)</span></div>
+          </div>
+          <p class="small-note">در اعداد حقیقی، فرمول‌های بالا با فرض‌های مناسب برای مقادیر زیر رادیکال و مخرج برقرارند.</p>
+        </article>
+        <aside class="fact-card purple-fact">
+          <span class="fact-icon">⌁</span><h3>نکته کلیدی</h3>
+          <p>رادیکال و توان دوم، در دامنه مناسب، دو عمل معکوس یکدیگرند.</p>
+          <div class="fact-equation">\\(\\sqrt{7^2}=7\\)</div>
+        </aside>
+      </div>
+      <div class="time-heading"><span>از گذشته تا آینده</span><i></i></div>
+      <div class="timeline three-columns">
+        <article><span class="time-tag">گذشته</span><h3>هندسه و معماری</h3><p>ریشه‌ها در حل مسائل هندسی، به‌ویژه محاسبه قطر مربع و طول‌های به‌دست‌آمده از قضیه فیثاغورس، نقش داشتند. این محاسبات در اندازه‌گیری و طراحی سازه‌ها مفید بودند.</p><div class="time-example">قطر مربع با ضلع ۵<br><b>\\(d=\\sqrt{5^2+5^2}=5\\sqrt2\\)</b></div></article>
+        <article><span class="time-tag">حال</span><h3>گرافیک و داده</h3><p>در گرافیک کامپیوتری برای محاسبه فاصله نقاط از ریشه دوم استفاده می‌شود. در برخی الگوریتم‌های یادگیری ماشین نیز فاصله اقلیدسی برای مقایسه داده‌ها به کار می‌رود.</p><div class="time-example">فاصله (۰،۰) تا (۳،۴)<br><b>\\(d=\\sqrt{3^2+4^2}=5\\)</b></div></article>
+        <article><span class="time-tag">آینده</span><h3>رباتیک و خودروهای خودران</h3><p>سامانه‌های رباتیک و خودروهای خودران برای تخمین فاصله از موانع و اشیا، داده‌های حسگرها را پردازش می‌کنند. محاسبات فاصله می‌توانند شامل ریشه دوم باشند.</p><div class="time-example">فاصله در فضای سه‌بعدی<br><b>\\(d=\\sqrt{(\\Delta x)^2+(\\Delta y)^2+(\\Delta z)^2}\\)</b></div></article>
+      </div>
+      <div class="lab-panel purple-lab">
+        <div class="lab-copy"><span class="mini-label">INTERACTIVE LAB 02</span><h3>آزمایشگاه رادیکال</h3><p>مختصات دو نقطه را تغییر بده و فاصله آن‌ها را روی صفحه محاسبه کن.</p><div class="lab-result" id="distanceResult">5.00</div><span class="result-caption">فاصله دو نقطه</span></div>
+        <div class="lab-controls">
+          <div class="coordinate-grid">
+            <label>نقطه A · x<input id="x1" type="number" value="0"></label><label>نقطه A · y<input id="y1" type="number" value="0"></label>
+            <label>نقطه B · x<input id="x2" type="number" value="3"></label><label>نقطه B · y<input id="y2" type="number" value="4"></label>
+          </div>
+          <div class="distance-equation" id="distanceEquation">√((۳−۰)² + (۴−۰)²) = ۵</div>
+          <div class="chart-wrap"><canvas id="distanceChart" aria-label="نمودار نقاط روی صفحه مختصات"></canvas></div>
+        </div>
+      </div>
+      <div class="quiz-box" data-quiz="radical">
+        <div><span class="mini-label">QUICK CHECK</span><h3>یک سؤال برای سنجش یادگیری</h3><p>فاصله نقطه (۰،۰) تا نقطه (۶،۸) چقدر است؟</p></div>
+        <div class="quiz-options"><button data-correct="false">۱۲</button><button data-correct="true">۱۰</button><button data-correct="false">۱۴</button></div>
+        <p class="quiz-feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="learning-section section" id="logarithms">
+      <div class="section-heading">
+        <span class="eyebrow green-eyebrow">03 / LOGARITHMS</span>
+        <h2>لگاریتم؛ پیدا کردن توان مجهول</h2>
+        <p>لگاریتم پاسخ این پرسش است: یک پایه را به چه توانی برسانیم تا عدد موردنظر به دست آید؟</p>
+      </div>
+      <div class="theory-grid">
+        <article class="theory-card">
+          <span class="mini-label">تعریف ریاضی</span>
+          <div class="big-equation">\\(\\log_b(x)=y\\iff b^y=x\\)</div>
+          <p>در این رابطه، b پایه لگاریتم، x عدد مثبت و y توان موردنظر است. پایه باید مثبت و مخالف ۱ باشد.</p>
+          <div class="rule-list">
+            <div><b>لگاریتم حاصل‌ضرب</b><span>\\(\\log_b(xy)=\\log_bx+\\log_by\\)</span></div>
+            <div><b>لگاریتم خارج‌قسمت</b><span>\\(\\log_b(\\frac xy)=\\log_bx-\\log_by\\)</span></div>
+            <div><b>لگاریتم توان</b><span>\\(\\log_b(x^n)=n\\log_bx\\)</span></div>
+            <div><b>لگاریتم یک</b><span>\\(\\log_b(1)=0\\)</span></div>
+          </div>
+        </article>
+        <aside class="fact-card green-fact">
+          <span class="fact-icon">↔</span><h3>نکته کلیدی</h3>
+          <p>لگاریتم و تابع نمایی، در شرایط تعریف، عمل معکوس یکدیگرند.</p>
+          <div class="fact-equation">\\(2^3=8\\iff\\log_2(8)=3\\)</div>
+        </aside>
+      </div>
+      <div class="time-heading"><span>از گذشته تا آینده</span><i></i></div>
+      <div class="timeline three-columns">
+        <article><span class="time-tag">گذشته</span><h3>نجوم و دریانوردی</h3><p>جان نپر در اوایل قرن هفدهم جدول‌های لگاریتمی را معرفی کرد. این جدول‌ها ضرب و تقسیم و محاسبات توان‌دار را برای دانشمندان، ستاره‌شناسان و دریانوردان ساده‌تر می‌کردند.</p><div class="time-example">تبدیل ضرب به جمع<br><b>\\(\\log(100×1000)=2+3=5\\)</b></div></article>
+        <article><span class="time-tag">حال</span><h3>الگوریتم و علوم</h3><p>جست‌وجوی دودویی در هر مرحله محدوده جست‌وجو را نصف می‌کند و پیچیدگی زمانی آن از مرتبه لگاریتمی است. مقیاس دسی‌بل و برخی روش‌های محاسبه احتمال در یادگیری ماشین نیز از لگاریتم استفاده می‌کنند.</p><div class="time-example">برای ۱۰۲۴ داده<br><b>\\(\\log_2(1024)=10\\)</b><br>حداکثر ۱۰ مرحله نصف‌کردن</div></article>
+        <article><span class="time-tag">آینده</span><h3>داده و امنیت</h3><p>با بزرگ‌تر شدن مجموعه‌داده‌ها، تحلیل الگوریتم‌های کارآمد همچنان اهمیت دارد. لگاریتم گسسته نیز در برخی ساختارهای رمزنگاری نقش ریاضی بنیادی دارد؛ هرچند آینده امنیت به پیشرفت‌های محاسباتی وابسته است.</p><div class="time-example">نمونه مفهوم لگاریتم گسسته<br><b>\\(g^x\\equiv y\\pmod p\\)</b><br>یافتن x در شرایط خاص</div></article>
+      </div>
+      <div class="lab-panel green-lab">
+        <div class="lab-copy"><span class="mini-label">INTERACTIVE LAB 03</span><h3>آزمایشگاه لگاریتم</h3><p>پایه و عدد را انتخاب کن تا توان موردنیاز محاسبه شود.</p><div class="lab-result" id="logResult">3</div><span class="result-caption">توان موردنیاز</span></div>
+        <div class="lab-controls">
+          <label for="logBase">پایه <output id="logBaseOut">2</output></label><input id="logBase" type="range" min="2" max="10" value="2">
+          <label for="logNumber">عدد <output id="logNumberOut">8</output></label><input id="logNumber" type="range" min="1" max="1000" value="8">
+          <div class="log-explain" id="logExplain">چون ۲ به توان ۳ برابر ۸ است، پس log₂(۸) = ۳</div>
+        </div>
+      </div>
+      <div class="quiz-box" data-quiz="log">
+        <div><span class="mini-label">QUICK CHECK</span><h3>یک سؤال برای سنجش یادگیری</h3><p>مقدار \(\\log_2(32)\) چند است؟</p></div>
+        <div class="quiz-options"><button data-correct="false">۴</button><button data-correct="true">۵</button><button data-correct="false">۶</button></div>
+        <p class="quiz-feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="final-section section" id="final-quiz">
+      <div class="section-heading centered">
+        <span class="eyebrow">FINAL CHALLENGE</span>
+        <h2>حالا نوبت توست!</h2>
+        <p>دانسته‌هایت را در یک آزمون کوتاه از هر سه مبحث محک بزن.</p>
+      </div>
+      <div class="final-quiz-card" id="finalQuiz">
+        <div class="quiz-progress"><span id="questionCounter">سؤال ۱ از ۶</span><div><i id="progressBar"></i></div></div>
+        <h3 id="finalQuestion">مقدار ۳ به توان ۲ چقدر است؟</h3>
+        <div class="final-options" id="finalOptions">
+          <button data-answer="6">۶</button><button data-answer="9">۹</button><button data-answer="12">۱۲</button>
+        </div>
+        <p class="final-feedback" id="finalFeedback" aria-live="polite"></p>
+        <button class="btn btn-primary next-question" id="nextQuestion" disabled>سؤال بعدی <span>←</span></button>
+      </div>
+      <div class="score-card hidden" id="scoreCard"><span class="score-icon">✦</span><h3>آزمون به پایان رسید!</h3><div class="score-number" id="scoreNumber">۰ از ۶</div><p id="scoreMessage"></p><button class="btn btn-primary" id="restartQuiz">تلاش دوباره</button></div>
+    </section>
+
+    <section class="conclusion section">
+      <span class="eyebrow">THE BIG PICTURE</span>
+      <h2>ریاضی، پلی میان گذشته و آینده</h2>
+      <p>توان به ما کمک می‌کند رشد و تکرار را توصیف کنیم؛ رادیکال در اندازه‌گیری و یافتن فاصله‌ها به کار می‌آید؛ و لگاریتم راهی برای پیدا کردن توان مجهول و تحلیل مقیاس‌هاست. این مفاهیم، بخشی از زبان مشترک علوم و فناوری‌اند.</p>
+      <a href="#home" class="btn btn-light">بازگشت به ابتدای سفر ↑</a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">∑</span><span>Math <b>Through Time</b></span></a><p>یک پروژه آموزشی درباره توان، رادیکال و لگاریتم</p><span>Designed for learning · 2026</span></footer>
+</body>
+</html>
